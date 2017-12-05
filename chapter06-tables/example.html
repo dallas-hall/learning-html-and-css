@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 6 Example - Tables</title>
+</head>
+<body>
+    <table>
+        <thead> <!-- table header for CSS styling -->
+            <tr>
+                <th></th> <!-- should be blank for the additional column -->
+                <th scope="col">Home Starter Hosting</th>
+                <th scope="col">Premium Business Hosting</th>
+            </tr>
+        </thead>
+        <tbody> <!-- table body for CSS styling -->
+            <tr>
+                <th scope="row">Disk Space</th>
+                <td>250MB</td>
+                <td>1GB</td>
+            </tr>
+            <tr>
+                <th scope="row">Bandwidth</th>
+                <td>5GB per month</td>
+                <td>50GB per month</td>
+            </tr>
+            <!-- more rows goes here -->
+        </tbody>
+        <tfoot> <!-- table footer for CSS styling -->
+            <tr>
+                <td></td> <!-- should be blank for the additional cell -->
+                <td colspan="2">Sign up now and save 10%, bitches.</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
