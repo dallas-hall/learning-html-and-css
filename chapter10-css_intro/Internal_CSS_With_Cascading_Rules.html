@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 10 - Using Internal CSS</title>
+    <!--
+    The CSS can be present either in an external file and linked using <link>
+    or it can be present within the HTML inside of <style>, but this should
+    only be used for very simple sites (e.g. a couple of pages with the same style).
+    -->
+    <style type="text/css">
+
+        * {
+            font-family: Arial, Verdana, sans-serif;
+        }
+
+        /* this rule takes precedence over the * (all elements) as it is more specific */
+        h1 {
+            font-family: "DejaVu Sans Mono", monospace;
+        }
+
+        i {
+            color: green;
+        }
+
+        /* the second i takes precedence here as it is the last of an identical set of rules */
+        i {
+            color: red;
+        }
+
+        /* the !important takes precedence here */
+        b {
+            color: pink;
+        }
+
+        p b {
+            color: blue !important;
+        }
+
+        p b {
+            color: violet;
+        }
+
+        p {
+            font-size: 75%;
+        }
+
+        /* the intro id overides applies */
+        p#intro {
+            font-size: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Potatoes Bitches</h1>
+    <p id="intro">There are <i>dozens</i> of different <b>potato</b> varieties.</p>
+    <p>They are usually described as early, second early, and maincrop.<br>....</p>
+</body>
+</html>
