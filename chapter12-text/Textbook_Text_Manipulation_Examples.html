@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 12 - Textbook Text Manipulation Examples</title>
+    <style>
+        /* Update the entire page
+
+            Update left side padding
+         */
+        body {
+            padding: 20px;
+        }
+
+        /* Update all <h1> <h2> <h3> and <a> tags
+
+            Update font weight
+            Update font colour
+            Update margin (left and right) size
+         */
+        h1, h2, h3, a {
+            font-weight: normal;
+            color: #0088dd;
+            margin: 0px;
+        }
+
+        /* Update all <h1>
+
+            Update font family
+            Update font size
+            Add a shadow to the text
+            - 1st arg = how far to the left or right the shadow should fall,
+              negative is left and positive is right
+            - 2nd arg = how far to the top of bottom the shadow should fall
+              negative is top and positive is bottom
+            - 3rd arg = optional blurring applied to the shadow
+            - 4th arg = colour of shadow
+            Update padding at the bottom of the text
+         */
+        h1 {
+            font-family: FreeSans, "MS SansSerif", sans-serif;
+            font-size: 250%;
+            text-shadow: 2px 2px 3px #666666;
+            padding-bottom: 10px;
+        }
+
+        /* Update all <h2>
+
+            Update font family
+            Update font size
+            Update text style
+            Update spacing between letters
+         */
+        h2 {
+            font-family: "DejaVu Sans", FreeSans, "MS SansSerif", sans-serif;
+            font-size: 90%;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+        }
+
+        /* Update all <h3>
+
+            Update font size
+         */
+        h3 {
+            font-size: 150%;
+        }
+
+        /* Update all <p>
+
+            Update font family
+            Update font size
+            Update font colour
+         */
+        p {
+            font-family: Arial, "MS SansSerif", sans-serif;
+            line-height: 1.4em;
+            color: #665544;
+        }
+
+        /* Update <p> with class as intro
+
+            Update font weight
+         */
+        p.intro:first-line {
+            font-weight: bold;
+        }
+
+        /* Update element with class as credits
+
+            Update font style
+            Update text alignment against margin
+         */
+        .credits {
+            font-style: italic;
+            text-align: right;
+        }
+
+        /* Update all <a>
+
+            Remove text decoration
+         */
+        a {
+            text-decoration: none;
+        }
+
+        /* Update all <a> using pseudo-element
+
+            Add an underline when user hovers over the <a>
+         */
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<h1>Briards</h1>
+<h2>A Heart wrapped in fur</h2>
+<p class="intro">The <a class="breed"
+                        href="http://en.wikipedia.org/wiki/Briard">
+    briard</a>, or berger de brie, is a large breed of dog traditionally used as
+    a herder and guardian of sheep.</p>
+<h3>Breed History</h3>
+<p>The briard, which is believed to have originated in France, has been bred for
+    centuries to herd and to protect sheep. The breed was used by the French
+    Army as sentries, messengers and to search for wounded soldiers because of
+    its fine sense of hearing. Briards were used in the First World War almost
+    to the point of extinction. Currently the population of briards is slowly
+    recovering. Charlemagne, Napoleon, Thomas Jefferson and Lafayette all owned
+    briards.</p>
+<p class="credits">by Ivy Duckett</p>
+</body>
+</html>
