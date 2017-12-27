@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 12 - My Text Manipulation Examples</title>
+    <style>
+        /* Set the default for everything on the page
+
+           Update the preferred font, then set some backups.
+           Update the font size in pixels
+           Update the line height
+        */
+        body {
+            font-family: FreeSerif, "MS Serif", serif;
+            font-size: 14px;
+            line-height: 1.4em;
+        }
+
+        /* Set the default for headings
+
+           Update the preferred font, then set some backups.
+           Give the text an overline, lol?
+           Update the text to be in capitals
+           Update the font size with percentages
+        */
+        h1, h2 {
+            font-family: FreeSans, "MS SansSerif", sans-serif;
+            text-decoration: overline;
+            text-transform: uppercase;
+            font-size: 200%;
+        }
+
+        /* Show casing CSS cascading rules (Specificity)
+
+           Override the text of <h2> to be lowercase
+           Underline the text.
+           Indent the text.
+         */
+        h2 {
+            text-transform: lowercase;
+            text-decoration-line: underline;
+            text-indent: 22px;
+        }
+
+        .credits {
+         /* Set the default for the specified class
+
+            Update the preferred font, then set some backups.
+            Update text to appear as oblique
+            Update the font size in comparison to the letter m (em)
+            Update the text alignment
+         */
+            font-family: FreeMono, monospace;
+            font-style: oblique;
+            font-size: 1.3em;
+            text-align: center;
+        }
+
+        /*
+            Put a line through some text
+        */
+        .wrong {
+            text-decoration-line: line-through;
+        }
+
+        /* Set the default for the specific class
+
+            Use a pseudo-element to change the size of the first letter
+        */
+        .intro:first-letter {
+            font-size: 200%;
+        }
+
+        /* Set the default for the specific class
+
+            Use a pseudo-element to change the size of the first line
+        */
+        .sam::first-line {
+            font-size: 150%;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Briards (lol wut)</h1>
+<p class="credits">By <span class ="wrong">John</span> Ivy Duckett</p>
+<p class="intro">The <a class="breed"
+                        href="http://en.wikipedia.org/wiki/Briard">briard</a>
+    , or berger de brie, is a large breed of dog traditionally used as
+    a herder and guardian of sheep...</p>
+<h2>Some Shit From http://slipsum.com/</h2>
+<p class="sam">
+    Now that we know who you are, I know who I am. I'm not a mistake! It all
+    makes sense! In a comic, you know how you can tell who the arch-villain's
+    going to be? He's the exact opposite of the hero. And most times they're
+    friends, like you and me! I should've known way back when... You know why,
+    David? Because of the kids. They called me Mr Glass.
+</p>
+</body>
+</html>
