@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 13 - Element Box Minimum and Maxium Width Example</title>
+    <style type="text/css">
+        /*
+        Change the font colour, alignment, and add a border below the text
+        of all the table headers.
+         */
+        th {
+            color: #0088dd;
+            text-align: left;
+            border-bottom: 1px solid #0088dd;
+        }
+        td.description {
+            min-width: 450px;
+            max-width: 650px;
+            text-align: left;
+            padding: 5px;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <th>Photo</th>
+    <th>Description</th>
+    <th>Price per KG</th>
+    <tr>
+        <td>
+            <img src="../chapter05-images/images/otters.jpg" width="200"
+                 height="100" alt="Some tasty otters"/>
+        </td>
+        <td class="description">
+            Well, the way they make shows is, they make one show. That show's
+            called a pilot. Then they show that show to the people who make
+            shows, and on the strength of that one show they decide if they're
+            going to make more shows. Some pilots get picked and become
+            television programs. Some don't, become nothing. She starred in one
+            of the ones that became nothing.
+        </td>
+        <td>
+            $100
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="../chapter05-images/images/quokka.jpg" width="200"
+                 height="100" alt="Some tasty otters"/>
+        </td>
+        <td class="description">
+            Now that we know who you are, I know who I am. I'm not a mistake! It
+            all makes sense! In a comic, you know how you can tell who the
+            arch-villain's going to be? He's the exact opposite of the hero. And
+            most times they're friends, like you and me! I should've known way
+            back when... You know why, David? Because of the kids. They called
+            me Mr Glass.
+        </td>
+        <td>
+            $1,000,000
+        </td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 13 - Element Box Minimum and Maxium Height Example</title>
+    <style type="text/css">
+        hr, p {
+            width: 400px;
+            font-size: 90%;
+            line-height: 1.2em;
+        }
+
+        h2 {
+            color: #0088dd;
+            border-bottom: 1px solid #0088dd;
+        }
+
+        /*
+         The maximum height here breaks the formatting because it is too big to
+         fit into the height given.
+         */
+        p {
+            min-height: 10px; /* used so lines don't appear too narrow */
+            max-height: 50px; /* used so lines don't appear too wide */
+        }
+
+        /*
+        This will hide any text that can't fit into the box around <p>
+         */
+        p.hide {
+            overflow: hidden;
+        }
+
+        /*
+        This will add a vertical and horizontal scroll bar to any text that
+        can't fit into the box around <p>. The vertical scroll bar doesn't
+        appear in Firefox but the horizontal one does.
+        In Chrome both appear.  The user  can scroll with the mouse wheel.
+        */
+        p.scroll {
+            /* this is needed for Firefox or just use overflow: auto*/
+            overflow: -moz-scrollbars-vertical;
+        }
+
+        /*
+        This will add a scroll bar to any text that can't fit into the box around <p>
+        The scroll bar is added depending on where it is needed.
+        The user  can scroll with the mouse wheel.
+        */
+        p.auto {
+            overflow: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Fender Mustang</h2>
+    <p class="hide">The path of the righteous man is beset on all sides by the
+        iniquities of the
+        selfish and the tyranny of evil men. Blessed is he who, in the name of charity
+        and good will, shepherds the weak through the valley of darkness, for he is
+        truly his brother's keeper and the finder of lost children. And I will strike
+        down upon thee with great vengeance and furious anger those who would attempt to
+        poison and destroy My brothers. And you will know My name is the Lord when I lay
+        My vengeance upon thee.</p>
+    <h2>Fender Stratocaster</h2>
+    <p class="scroll">TDo you see any Teletubbies in here? Do you see a slender
+        plastic
+        tag clipped to
+        my shirt with my name printed on it? Do you see a little Asian child with a
+        blank expression on his face sitting outside on a mechanical helicopter that
+        shakes when you put quarters in it? No? Well, that's what you see at a toy
+        store. And you must think you're in a toy store, because you're here shopping
+        for an infant named Jeb.</p>
+    <h2>Gibson Les Paul</h2>
+    <p class="auto">TWell, the way they make shows is, they make one show. That
+        show's
+        called a
+        pilot. Then they show that show to the people who make shows, and on the
+        strength of that one show they decide if they're going to make more shows. Some
+        pilots get picked and become television programs. Some don't, become nothing.
+        She starred in one of the ones that became nothing.</p>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 13 - Element Box Border Using Images Examples</title>
+    <style type="text/css">
+
+        /*
+        Set the width of the border
+        Set the height of the border
+        Set the border thickness, style, and colour using shorthand
+        */
+        p {
+            width: 160px;
+            height: 120px;
+            border: 11px solid #ffffff;}
+
+        /*
+        The first two lines are for older versions of Firefox and Chrome
+        Set the border image file location, the top, right, left, and bottom
+        sizes and then set the image style
+
+        Since there are 9 dots in this image and the dots don't fit into the
+        width and height perfectly, the middle dots are stretched to fit the
+        space.
+         */
+        p.one {
+
+            /*-moz-border-image: url("images/dots.gif") 11 11 11 11 stretch;
+            -webkit-border-image: url("images/dots.gif") 11 11 11 11 stretch;*/
+            border-image: url("images/dots.gif") 11 11 11 11 stretch;
+
+        }
+
+        /*
+        The dots are repeated until all the space is used, uses scaling
+        to fit nicely.
+         */
+        p.two {
+            border-image: url("images/dots.gif") 11 11 11 11 round;
+        }
+
+        /*
+        The dots are repeated until all the space is used, doesn't do any scaling
+        to fit nicely.
+        */
+        p.three {
+            border-image: url("images/dots.gif") 11 11 11 11 repeat;
+        }
+
+
+    </style>
+</head>
+<body>
+    <p class="one">Stretch</p>
+    <p class="two">Round (repeat with image scaling)</p>
+    <p class="three">Repeat (without image scaling - look at the crappy
+        corners)</p>
+</body>
+</html>

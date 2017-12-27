@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 13 - Element Box Border Examples</title>
+    <style type="text/css">
+        /*
+        Set the width of the box
+        Set the margin of the box (space between boxes) using shorthand
+        for left & right (10) then top & bottom (20)
+         */
+        p {
+            width: 500px;
+            margin: 10px 20px;
+        }
+
+        /*
+        Set the border style
+        Set the border colour
+        Set the border thickness
+        Set the space between the border and the content
+         */
+        p.one {
+            border-style: outset;
+            border-color: green;
+            border-width: 2px;
+            padding: 10px;
+        }
+
+        p.two {
+            border-style: dashed;
+            border-color: yellow;
+            border-width: thick;
+            padding: 0px;
+        }
+
+        /*
+        Set each border width separately (top, right, bottom, left)
+        Set the box to be centred (use shorthand to set all 4 at the same time)
+         */
+        p.three {
+            margin: auto;
+            border-style: solid;
+            border-color: dodgerblue;
+            border-width: 1px 4px 12px 8px;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <p class="one">Hohner's "Clavinet" is essentially an
+    electric clavichord.</p>
+    <p class="two">Hohner's "Clavinet" is essentially an
+        electric clavichord.</p>
+    <p class="three">Hohner's "Clavinet" is essentially
+        an electric clavichord.</p>
+</body>
+</html>

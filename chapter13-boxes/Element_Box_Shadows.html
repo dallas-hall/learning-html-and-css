@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 13 - Element Box Shadow Examples</title>
+    <style type="text/css">
+        /*
+        Change the box width
+        Change the box height
+        Change the box background colour
+        Change the box margin
+        Change the block element to flow like an inline element but
+        retain all other block level features
+        */
+        p {
+            width: 100px;
+            height: 100px;
+            background-color: #e1ddda;
+            margin: 20px;
+            display: inline-block;}
+
+        /*
+        The first 2 lines are for old browsers.
+        */
+        p.one {
+            -moz-box-shadow: -5px -5px #777777;
+            -webkit-box-shadow: -5px -5px #777777;
+            box-shadow: -5px -5px #777777;}
+        p.two {
+            -moz-box-shadow: 5px 5px 5px #777777;
+            -webkit-box-shadow: 5px 5px 5px #777777;
+            box-shadow: 5px 5px 5px #777777;}
+        p.three {
+            -moz-box-shadow: 5px 5px 5px 5px #777777;
+            -webkit-box-shadow: 5px 5px 5px 5px #777777;
+            box-shadow: 5px 5px 5px 5px #777777;}
+        p.four {
+            -moz-box-shadow: 0 0 10px #777777;
+            -webkit-box-shadow: 0 0 10px #777777;
+            box-shadow: 0 0 10px #777777;}
+        p.five {
+            -moz-box-shadow: inset 0 0 10px #777777;
+            -webkit-box-shadow: inset 0 0 10px #777777;
+            box-shadow: inset 0 0 10px #777777;}
+    </style>
+</head>
+<body>
+    <p class="one"></p>
+    <p class="two"></p>
+    <p class="three"></p>
+    <br/>
+    <p class="four"></p>
+    <p class="five"></p>
+</body>
+</html>
