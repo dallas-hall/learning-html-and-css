@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 13 - Element Box Navigation Links Example</title>
+    <style type="text/css">
+        /*
+        Change the list element to be an inline element instead of block,
+        So they now appear on the same line
+         */
+        li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        /*
+        Don't display Services, but it is still viewable in the page source
+         */
+        li.coming-soon {
+            display: none;
+        }
+
+        /*
+        Don't display Sexual Services, but it is still viewable in the page source
+        and a space is left on the page for it.
+        */
+        li.hiding-now {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Home</li>
+        <li>Products</li>
+        <li class="coming-soon">Services</li>
+        <li class="hiding-now">Sexual Services</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+</body>
+</html>
