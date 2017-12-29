@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 13 - List Styling Examples</title>
+    <style type="text/css">
+        /* Style all list items
+
+        Add a margin so they are spaced nicely
+        */
+        li {
+            margin: 5px;
+        }
+
+        /* Style order list "ol_list1"
+
+        Use roman numerals in lowercase
+         */
+        .ol_list1 {
+            list-style-type: lower-roman;
+        }
+
+        /* Style order list "ol_list2"
+
+        Use image file for marker
+        */
+        .ol_list2 {
+            list-style-image: url("textbook/images/star.png");
+        }
+
+        /* Style unordered list "ul_list1"
+
+        Use unfilled circles
+         */
+        .ul_list1 {
+            list-style-type: circle;
+        }
+
+        /* Style unordered list "ul_list2"
+
+        Use filled squares
+        And indent the marker with the text
+        Using width so we can see the identation
+        */
+        .ul_list2 {
+            width: 320px;
+            list-style-type: square;
+            list-style-position: inside;
+        }
+        /* Style the unordered list "ul_list2" list items "ul_list2_li"
+
+        Override the margin so there is no space between the markers
+         */
+        .ul_list2_li {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+<h1>Some Shitty Lists</h1>
+<h2>Shitty Ordered List 1</h2>
+<ol class="ol_list1">
+    <li>Shitty Item 1</li>
+    <li>Shitty Item 2</li>
+    <li>Shitty Item 3</li>
+    <li>Shitty Item 4</li>
+    <li>Shitty Item 5</li>
+</ol>
+<h2>Shitty Ordered List 2</h2>
+<ol class="ol_list2">
+    <li>Shitty Item 1</li>
+    <li>Shitty Item 2</li>
+    <li>Shitty Item 3</li>
+    <li>Shitty Item 4</li>
+    <li>Shitty Item 5</li>
+</ol>
+<h2>Shitty Unordered List 1</h2>
+<ul class="ul_list1">
+    <li>Shitty Item 1</li>
+    <li>Shitty Item 2</li>
+    <li>Shitty Item 3</li>
+    <li>Shitty Item 4</li>
+    <li>Shitty Item 5</li>
+</ul>
+<h2>Shitty Unordered List 2</h2>
+<ul class="ul_list2">
+    <li class="ul_list2_li">Normally, both your asses would be dead as fucking
+        fried
+        chicken,
+        but
+        you happen to pull this shit while I'm in a transitional period so I
+        don't wanna kill you, I wanna help you.</li>
+    <li class="ul_list2_li">But I can't give you this case, it don't belong to me. Besides,
+        I've already been through too much shit this morning over this case
+        to hand it over to your dumb ass.
+    </li>
+</ul>
+</body>
+</html>
