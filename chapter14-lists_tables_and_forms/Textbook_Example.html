@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 14 - Final Chapter Example</title>
+    <style type="text/css">
+        /* Style the entire body
+
+        Set the font stack
+        Set the font size to a percentage of the current size (default is 90%)
+        set the font colour
+        Set the background colour
+         */
+        body {
+            font-family: Arial, Verdana, sans-serif;
+            font-size: 90%;
+            color: #666666;
+            background-color: #f8f8f8;
+        }
+
+        /* Style list items
+
+        Set the marker to be an image
+        Set the spacing between list items
+        */
+        li {
+            list-style-image: url("images/icon-plus.png");
+            line-height: 1.6em;
+        }
+
+        /* Style tables
+
+        Set spacing between the cell borders
+         */
+        table {
+            border-spacing: 0px;
+        }
+
+        /* Style table headings and cell data
+
+        Set space between border and content for the
+        top, right, bottom, and left.
+        Set spacing between the cell borders
+        Set the font size to a percentage of the current size (default is 90%)
+        Set space between border and element content
+         */
+        th, td {
+            padding: 5px 30px 5px 10px;
+            border-spacing: 100px 100px;
+            font-size: 90%;
+            margin: 0px;
+        }
+
+        th, td {
+            text-align: left;
+            background-color: #e0e9f0;
+            border-top: 1px solid #f1f8fe;
+            border-bottom: 1px solid #cbd2d8;
+            border-right: 1px solid #cbd2d8;
+        }
+
+        tr.head th {
+            color: #fff;
+            background-color: #90b4d6;
+            border-bottom: 2px solid #547ca0;
+            border-right: 1px solid #749abe;
+            border-top: 1px solid #90b4d6;
+            text-align: center;
+            text-shadow: -1px -1px 1px #666666;
+            letter-spacing: 0.15em;
+        }
+
+        /* Style table cells
+
+        Add a text shadow
+        */
+        td {
+            text-shadow: 1px 1px 1px #ffffff;
+        }
+
+        /** Style the table rows
+
+        Change the background colour for every even numbered row
+         */
+        tr.even td, tr.even th {
+            background-color: #e8eff5;
+        }
+
+        /* Style the table row that contains the table header
+
+        Style the top left corner to be curved
+         */
+        tr.head th:first-child {
+            -webkit-border-top-left-radius: 5px;
+            -moz-border-radius-topleft: 5px;
+            border-top-left-radius: 5px;
+        }
+
+        /* Style the table row that contains the table header
+
+        Style the top right corner to be curved
+        */
+        tr.head th:last-child {
+            -webkit-border-top-right-radius: 5px;
+            -moz-border-radius-topright: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        /* Create an enclosed group of form elements
+
+        Update the width
+        Update the margin space at the top (space between element box border
+        and the next element
+        Update the border size, style, and colour
+        Set background colour
+        Update line height for readability
+         */
+        fieldset {
+            width: 310px;
+            margin-top: 20px;
+            border: 1px solid #d6d6d6;
+            background-color: #ffffff;
+            line-height: 1.6em;
+        }
+
+        /* Style the legend within the fieldset border
+
+        Set font style and colour
+         */
+        legend {
+            font-style: italic;
+            color: #666666;
+        }
+
+        /* Style the input textfields
+
+        Set the width
+        Set the border's size, style, and colour
+        Set padding (space between the element box border and any
+        content within it)
+        Remove the outline
+         */
+        input[type="text"] {
+            width: 120px;
+            border: 1px solid #d6d6d6;
+            padding: 2px;
+            outline: none;
+        }
+
+        /* More textfield styling (mouse hover and field focus)
+
+        Change background colour
+        Set border size, style, and colour
+         */
+        input[type="text"]:focus, input[type="text"]:hover {
+            background-color: #d0e2f0;
+            border: 1px solid #999999;
+        }
+
+        /* Style the submit button
+
+        Set border size, style, and colour
+        Set background colour
+        Set text colour
+        Create curved border
+        Set padding (space between the element box and inside content)
+        Set margin (space between the element box and outside content)
+         */
+        input[type="submit"] {
+            border: 1px solid #006633;
+            background-color: #009966;
+            color: #ffffff;
+            border-radius: 5px;
+            padding: 5px;
+            margin-top: 10px;
+        }
+
+        /* Extra submit button styling for mouse hover
+
+        Set border size, style, and colour
+        Set background colour
+        Set text colour
+        Change the cursor style
+         */
+        input[type="submit"]:hover {
+            border: 1px solid #006633;
+            background-color: #00CC33;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+
+        .title {
+            float: left;
+            width: 160px;
+            clear: left;
+        }
+
+        .submit {
+            width: 310px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+<h1>Poetry Workshops</h1>
+<p>We will be conducting a number of poetry workshops and symposiums throughout
+    the year.</p>
+<p>Please note that the following events are free to members:</p>
+<ul>
+    <li>A Poetic Perspective</li>
+    <li>Walt Whitman at War</li>
+    <li>Found Poems and Outsider Poetry</li>
+</ul>
+<table>
+    <tr class="head">
+        <th></th>
+        <th>New York</th>
+        <th>Chicago</th>
+        <th>San Francisco</th>
+    </tr>
+    <tr>
+        <th>A Poetic Perspective</th>
+        <td>Sat, 4 Feb 2012<br/>11am - 2pm</td>
+        <td>Sat, 3 Mar 2012<br/>11am - 2pm</td>
+        <td>Sat, 17 Mar 2012<br/>11am - 2pm</td>
+    </tr>
+    <tr class="even">
+        <th>Walt Whitman at War</th>
+        <td>Sat, 7 Apr 2012<br/>11am - 1pm</td>
+        <td>Sat, 5 May 2012<br/>11am - 1pm</td>
+        <td>Sat, 19 May 2012<br/>11am - 1pm</td>
+    </tr>
+    <tr>
+        <th>Found Poems &amp; Outsider Poetry</th>
+        <td>Sat, 9 Jun 2012<br/>11am - 2pm</td>
+        <td>Sat, 7 Jul 2012<br/>11am - 2pm</td>
+        <td>Sat, 21 Jul 2012<br/>11am - 2pm</td>
+    </tr>
+    <tr class="even">
+        <th>Natural Death: An Exploration</th>
+        <td>Sat, 4 Aug 2012<br/>11am - 4pm</td>
+        <td>Sat, 8 Sep 2012<br/>11am - 4pm</td>
+        <td>Sat, 15 Sep 2012<br/>11am - 4pm</td>
+    </tr>
+</table>
+<!-- create a form -->
+<form action="http://www.example.com/form.php" method="get">
+    <!-- create a fieldset to group all the form elements together -->
+    <fieldset>
+        <!-- create a heading for the fieldset inside the border at the top-->
+        <legend>Register your interest</legend>
+        <!-- add a text label and give it an id and class-->
+        <p><label class="title" for="name">Your name:</label>
+            <!-- add a textfield and give it an id -->
+            <input type="text" name="name" id="name"><br/>
+            <label class="title" for="email">Your email:</label>
+            <input type="text" name="email" id="email"></p>
+        <!-- add a text label and give it an id and class -->
+        <p><label for="location" class="title">Your closest center:</label>
+            <!-- add a dropdown box with an id -->
+            <select name="location" id="location">
+                <!-- add dropdown box elements -->
+                <option value="ny">New York</option>
+                <option value="il">Chicago</option>
+                <option value="ca">San Francisco</option>
+            </select></p>
+        <span class="title">Are you a member?</span>
+        <!-- add radio buttons with a label, the label wrapping means
+         users can click on the text to select the button -->
+        <label><input type="radio" name="member" value="yes"/> Yes</label>
+        <label><input type="radio" name="member" value="no"/> No</label></p>
+    </fieldset>
+    <div class="submit"><input type="submit" value="Register"/></div>
+</form>
+</body>
+</html>
