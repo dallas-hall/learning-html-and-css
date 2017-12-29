@@ -1,0 +1,57 @@
+/*
+    The main difference is the use of pixels for sizing.
+ */
+
+/* Style the body block-element container
+
+Set a fixed width
+Set margin (space between the element box and outside content), the
+top/bottom margins at 0 and left and right for auto (centering content)
+ */
+body {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* Style the content block-element container
+
+Add a scrollbar automatically when content overflows
+Set the height to max
+ */
+#content {
+    overflow: auto;
+    height: 100%;
+}
+
+/* Style the navigation, feature, and footer block-element containers
+
+Change the background colour
+Set padding (space between the element box and inside content)
+ */
+#nav, #feature, #footer {
+    background-color: #efefef;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Style the column block-line elements
+
+Set a fixed width for all of them, that fits inside the body container width
+Use float to align them to the left
+*/
+.column1, .column2, .column3 {
+    background-color: #efefef;
+    width: 300px;
+    float: left;
+    margin: 10px;
+}
+
+/* Style list elements
+
+Use display inline to cause block-line elements to act like inline-elements,
+this is for the navigation menu so the elements sit side by side
+ */
+li {
+    display: inline;
+    padding: 5px;
+}
