@@ -1,0 +1,70 @@
+/*
+    The main difference is the use of percentages for sizing.
+ */
+
+/* Style the body block-line element
+
+Set the width to 90% of the current browser size
+Set margin (space between the element box and outside content), the
+top/bottom margins at 0 and left and right for auto (centering content)
+ */
+body {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Style the content block-element container
+
+Add a scrollbar automatically when content overflows
+Set the height to max
+ */
+#content {
+    overflow: auto;
+}
+
+/* Style the navigation, feature, and footer block-element containers
+
+Set the margin to 1% which is the same for column elements, this helps
+alignment
+ */
+#nav, #feature, #footer {
+    margin: 1%;
+}
+
+/* Style the column block-line elements
+
+We have 3 columns, so set the width to 31.3% and a margin of 1%,
+this is (31.3 * 3) + (1 * 6) = 99.9
+Note: the 6 1's are the 1% left and right margins of the columns
+ */
+.column1, .column2, .column3 {
+    width: 31.3%;
+    float: left;
+    margin: 1%;
+}
+
+/* Style the last column's right hand margin
+
+This trick is used in case a browser can't display the content properly
+due to doubling up margins.
+ */
+.column3 {
+    margin-right: 0%;
+}
+
+/* Style the navigation and footer block-line element containers
+
+ */
+#nav, #footer {
+    background-color: #efefef;
+    padding: 0.5em 0;
+}
+
+/* Style the feature and article block-line element containers
+
+ */
+#feature, .article {
+    height: 10em;
+    margin-bottom: 1em;
+    background-color: #efefef;
+}
